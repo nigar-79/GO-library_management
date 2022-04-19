@@ -5,8 +5,15 @@ import (
 	"os"
 
 	"github.com/pelletier/go-toml"
+	"gorm.io/gorm"
 	"sdbgo.in/sdbgo/src/config"
 )
+
+//DatabaseConn is the struct used to initilaise the Appconfig struct from the config file which holds the configuration structs.
+type DatabaseConn struct {
+	AppConfiguration *config.Database
+	Data             *gorm.DB
+}
 
 //LoadAppConfig Function loads the toml file data to the struct defined in appconfig and
 //returns an error with the data
