@@ -2,10 +2,10 @@ title = "SDBLIBGO Application Configuration"
 
 [database]
 host="localhost"
-port=5432
-user="postgres"
-password="627726"
-dbname="SDB"
+port=65544
+user="postgresql"
+password="12345"
+dbname="Student_Library_database_management_system"
 sslmode=false
 
 [server]
