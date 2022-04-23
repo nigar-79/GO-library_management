@@ -5,7 +5,7 @@ import (
 
 	"github.com/kataras/iris/v12"
 	"sdbgo.in/sdbgo/src/databasecon"
-	"sdbgo.in/sdbgo/src/models"
+	models "sdbgo.in/sdbgo/src/models/base"
 )
 
 //DataController contails the connection details to the db

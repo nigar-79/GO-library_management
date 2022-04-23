@@ -3,7 +3,7 @@ package utils
 import (
 	"fmt"
 
-	"sdbgo.in/sdbgo/src/models"
+	models "sdbgo.in/sdbgo/src/models/base"
 )
 
 //CreateTables is the function which is used to create db tables
