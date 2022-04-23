@@ -1,6 +1,10 @@
 package models
 
-import "time"
+import (
+	"time"
+
+	"sdbgo.in/sdbgo/src/models"
+)
 
 // Course - courses in an organization, particular to a program
 type Course struct {
@@ -12,7 +16,7 @@ type Course struct {
 	Description        string    `gorm:"size:500" json:"description"`
 	AddedDate          time.Time `gorm:"size:50" json:"added_date"`
 	Status             string    `gorm:"size:20" json:"status"`
-	Base
+	models.Base
 }
 
 // TableName TABLE NAME

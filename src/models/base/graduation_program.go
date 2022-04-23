@@ -1,6 +1,10 @@
 package models
 
-import "time"
+import (
+	"time"
+
+	"sdbgo.in/sdbgo/src/models"
+)
 
 // GradProgram graduation programs in any organization
 type GradProgram struct {
@@ -9,7 +13,7 @@ type GradProgram struct {
 	GraduationTypeAddedDate time.Time `gorm:"size=50" json:"graduation_type_added_date"`
 	InstituteID             string    `gorm:"References:InstituteID;size:50" json:"institute_id"`
 	Status                  string    `gorm:"size=20" json:"status"`
-	Base
+	models.Base
 }
 
 // TableName TABLE NAME

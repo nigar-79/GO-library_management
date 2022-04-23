@@ -1,6 +1,10 @@
 package models
 
-import "time"
+import (
+	"time"
+
+	"sdbgo.in/sdbgo/src/models"
+)
 
 // Institution details
 type Institution struct {
@@ -26,7 +30,7 @@ type Institution struct {
 	InstituteStartDate      time.Time `gorm:"size:20" json:"institute_start_date"`
 	AreaInAcres             float64   `gorm:"size:200" json:"area_in_acres"`
 	Status                  string    `gorm:"size:20" json:"status"`
-	Base                    `json:"base"`
+	models.Base
 }
 
 // TableName TABLE NAME
