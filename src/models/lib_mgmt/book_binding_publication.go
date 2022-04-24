@@ -3,7 +3,7 @@ package models
 import (
 	"time"
 
-	models "sdbgo.in/sdbgo/src/models/base"
+	"sdbgo.in/sdbgo/src/models"
 )
 
 //BookBindingPublication book binding and publication details

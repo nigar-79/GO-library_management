@@ -1,5 +1,7 @@
 package models
 
+import "sdbgo.in/sdbgo/src/models"
+
 type BookDetails struct {
 	BookID               int    `gorm:"primary_key;size=50" json:"book_id"`
 	ISBN                 string `gorm:"size=20" json:"isbn"`
@@ -9,4 +11,5 @@ type BookDetails struct {
 	CategoryID           int    `gorm:"References:CategoryID;size=50" json:"category_id"`
 	BindingPublicationID int    `gorm:"References:PublicationID;size=50" json:"binding_publication_id"`
 	ShelfID              int    `gorm:"References:shelf_id;size=50" json:"shelf_id"`
+	models.Base
 }
